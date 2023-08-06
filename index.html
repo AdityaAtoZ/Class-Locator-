@@ -1,0 +1,57 @@
+<!-- Why r you looking here :) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Class Locator</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+
+    <div class="top">
+      <img src="https://www.gehu.ac.in/assets/geu-white-b7d14905.svg" alt="logo" />
+      <h1>Class Locator</h1>
+    </div>
+    <label for="classInput">Enter Class Number or Name</label>
+    <br />
+
+      <select id="sectionSelect" onchange="toggleClassInput()">
+        <option value="">--Please choose a section--</option>
+        <!-- <option value="CR">CR (Classroom)</option> -->
+        <option value="LT">LT (Lecture Hall)</option>
+        <option value="Prof. KP Nautiyal Auditorium">Prof. KP Nautiyal Auditorium</option>
+        <option value="Seminar hall">Seminar hall</option>
+      </select>
+
+    <select id="classInput" style="display: none;">
+      <option value="">--Please choose a section--</option>
+      <option value="201">201</option>
+      <option value="202">202</option>
+      <option value="301">301</option>
+      <option value="402">402</option>
+      <option value="601">601</option>
+      <option value="602">602</option>      
+    </select>
+      
+    <br />
+
+    <button onclick="findClassLocation()">Find Class</button>
+    <p id="result"></p>
+ 
+  <div class="contaier">
+    <footer>
+      <p>&copy; 2023 Graphic Era Hill University. All rights reserved.</p>
+    </footer>
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>
